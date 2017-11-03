@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element label="Custom Field" max_length="200" name="custom_field" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="tech" label="Custom List" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="IT Department" sequence="3" value="tech"/>
+            </choice>
+        </element>
+        <element default="0" label="New Custom Field" max_length="5" name="u_new_custom_field" type="integer"/>
+        <element label="Users" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element label="Users" max_length="32" name="u_reference_3" reference="sys_user" type="reference"/>
+        <element label="New URL" max_length="1024" name="u_url_1" type="url"/>
+    </element>
+</database>
